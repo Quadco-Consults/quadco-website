@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(brew install:*)",
+      "Bash(pdftoppm:*)",
+      "Bash(pdftotext:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest quadco-next --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "Bash(open:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)"
+    ]
+  }
+}
