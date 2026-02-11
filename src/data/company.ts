@@ -32,12 +32,12 @@ export const COMPANY = {
     full: "No 45, T.O.S Benson Crescent, Utako District, Abuja, Nigeria",
   },
   email: {
-    general: "info@quadcoconsults.com",
-    projects: "projects@quadcoconsults.com",
+    general: "info@quadcoconsults.com.ng",
+    projects: "projects@quadcoconsults.com.ng",
   },
   phone: {
-    office: "+234 (0) 000 000 0000",
-    alt: "+234 (0) 111 222 3333",
+    office: "+234 (0) 80 383 13791",
+    alt: "+234 (0) 80 383 13791",
   },
   compliance: ["CAC", "NITDA", "FIRS", "NUPRC", "COREN", "PENCOM", "BPP"],
   stats: [

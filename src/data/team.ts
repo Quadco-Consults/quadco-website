@@ -13,26 +13,26 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     id: "t1",
-    name: "Adaeze Okonkwo",
+    name: "Muhammad Suleiman Ilu",
     role: "Managing Director",
     image:
       "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=800&h=1000",
     socials: {
       linkedin: "#",
       twitter: "#",
-      email: "adaeze@quadcoconsults.com",
+      email: "muhammad@quadcoconsults.com.ng",
     },
   },
   {
     id: "t2",
-    name: "Emeka Nwosu",
+    name: "Bello Muhammad",
     role: "Head of Engineering",
     image:
       "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&q=80&w=800&h=1000",
     socials: {
       linkedin: "#",
       twitter: "#",
-      email: "emeka@quadcoconsults.com",
+      email: "bello@quadcoconsults.com.ng",
     },
   },
   {

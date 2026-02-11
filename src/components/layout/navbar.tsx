@@ -80,14 +80,8 @@ export function Navbar() {
           })}
         </ul>
 
-        {/* Desktop CTA + Mobile Menu Trigger */}
+        {/* Mobile Menu Trigger */}
         <div className="flex items-center gap-4">
-          <div className="hidden lg:block">
-            <CtaButton href="/contact" variant="primary">
-              Start a Project
-            </CtaButton>
-          </div>
-
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -129,14 +123,6 @@ export function Navbar() {
                     </SheetClose>
                   );
                 })}
-
-                <div className="mt-6 pt-6 border-t border-border">
-                  <SheetClose asChild>
-                    <CtaButton href="/contact" variant="primary" className="w-full text-center">
-                      Start a Project
-                    </CtaButton>
-                  </SheetClose>
-                </div>
               </div>
             </SheetContent>
           </Sheet>
