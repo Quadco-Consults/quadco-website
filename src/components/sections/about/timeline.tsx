@@ -31,24 +31,6 @@ const milestones: Milestone[] = [
     description:
       "Attained ISO 9001 (Quality), ISO 20000 (IT Service Management), and ISO 27001 (Information Security) certifications, demonstrating our commitment to international standards.",
   },
-  {
-    year: "2023",
-    title: "ERP Deployment for AHNi",
-    description:
-      "Successfully deployed a full ERP system for Achieving Health Nigeria Initiative (AHNi), streamlining their operational processes nationwide.",
-  },
-  {
-    year: "2024",
-    title: "NNPC Command Center Project",
-    description:
-      "Delivered the state-of-the-art video wall and command center solution for the Nigerian National Petroleum Company, enhancing operational visibility.",
-  },
-  {
-    year: "2025",
-    title: "NUPRC & NITDA Certifications",
-    description:
-      "Secured NUPRC certification for oil and gas operations and NITDA registration, expanding our regulatory compliance portfolio and market reach.",
-  },
 ];
 
 export function Timeline() {
