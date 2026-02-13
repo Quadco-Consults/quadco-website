@@ -13,52 +13,135 @@ export function AboutPreview() {
   return (
     <section className="bg-background py-28" aria-label="About preview">
       <div className="mx-auto grid max-w-7xl items-start gap-16 px-6 lg:grid-cols-2 lg:px-8">
-        {/* ---------- Left: Photo Collage ---------- */}
+        {/* ---------- Left: Photo Mosaic ---------- */}
         <FadeIn direction="left" duration={0.9}>
-          <div className="relative h-[680px]">
-            {/* Top-left image */}
-            <div className="absolute left-0 top-0 w-[55%] overflow-hidden rounded-2xl border border-border">
+          <div className="relative h-[620px] lg:h-[680px]">
+            {/* Subtle cloud/blob outline behind the mosaic */}
+            <svg
+              className="pointer-events-none absolute left-[5%] top-[2%] z-0 h-[55%] w-[55%] text-emerald-200/40"
+              viewBox="0 0 200 180"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M60 140c-30 0-50-20-50-45s15-40 35-42c-2-25 20-48 48-48 22 0 40 13 46 32 5-3 11-5 18-5 20 0 36 16 36 36 0 3-0.5 6-1 9 12 6 20 18 20 33 0 20-16 30-36 30H60z"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+
+            {/* Row 1 — top area */}
+            {/* Small tall tile - top left */}
+            <div className="absolute left-[8%] top-[8%] z-[2] h-[120px] w-[70px] overflow-hidden rounded-xl shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
-                alt="Team collaborating on a project"
-                width={600}
-                height={400}
-                className="h-[260px] w-full object-cover"
+                src="/images/118348.jpg"
+                alt="Team collaborating"
+                fill
+                className="object-cover"
+                sizes="70px"
               />
             </div>
 
-            {/* Center image (overlapping, taller) */}
-            <div className="absolute left-[30%] top-[15%] z-10 w-[55%] overflow-hidden rounded-2xl border border-border">
+            {/* Medium tall tile - center left */}
+            <div className="absolute left-[22%] top-[5%] z-[3] h-[180px] w-[100px] overflow-hidden rounded-xl shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop"
-                alt="Professional IT consultant"
-                width={600}
-                height={700}
-                className="h-[360px] w-full object-cover"
+                src="/images/2150917270.jpg"
+                alt="Professional consultant"
+                fill
+                className="object-cover"
+                sizes="100px"
               />
             </div>
 
-            {/* Bottom-left image */}
-            <div className="absolute bottom-0 left-0 w-[50%] overflow-hidden rounded-2xl border border-border">
+            {/* Small gray accent tile */}
+            <div className="absolute left-[44%] top-[3%] z-[1] h-[80px] w-[55px] rounded-xl bg-gradient-to-b from-gray-700 to-gray-900 shadow-lg" />
+
+            {/* Narrow tall tile - top right */}
+            <div className="absolute left-[54%] top-[6%] z-[2] h-[140px] w-[65px] overflow-hidden rounded-xl shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop"
-                alt="Business team in a meeting"
-                width={600}
-                height={400}
-                className="h-[260px] w-full object-cover"
+                src="/images/118348.jpg"
+                alt="Business operations"
+                fill
+                className="object-cover object-right"
+                sizes="65px"
               />
             </div>
 
-            {/* Bottom-center image (overlapping) */}
-            <div className="absolute bottom-[5%] left-[35%] z-10 w-[50%] overflow-hidden rounded-2xl border border-border">
+            {/* Row 2 — middle area (main focal point) */}
+            {/* Large tile - center left */}
+            <div className="absolute left-[10%] top-[28%] z-[4] h-[200px] w-[150px] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"
-                alt="Engineering team at work"
-                width={600}
-                height={400}
-                className="h-[240px] w-full object-cover"
+                src="/images/2150917270.jpg"
+                alt="IT consultant at work"
+                fill
+                className="object-cover object-center"
+                sizes="150px"
               />
             </div>
+
+            {/* Large tile - center */}
+            <div className="absolute left-[35%] top-[22%] z-[5] h-[220px] w-[160px] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/images/118348.jpg"
+                alt="Team collaboration"
+                fill
+                className="object-cover"
+                sizes="160px"
+              />
+            </div>
+
+            {/* Medium tile - right of center */}
+            <div className="absolute left-[62%] top-[25%] z-[4] h-[180px] w-[130px] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/images/2150917270.jpg"
+                alt="Engineering work"
+                fill
+                className="object-cover object-left"
+                sizes="130px"
+              />
+            </div>
+
+            {/* Small dark accent tile - far right */}
+            <div className="absolute left-[80%] top-[20%] z-[2] h-[90px] w-[60px] rounded-xl bg-gradient-to-b from-gray-600 to-gray-800 shadow-lg" />
+
+            {/* Row 3 — bottom area */}
+            {/* Medium tile - bottom left */}
+            <div className="absolute bottom-[12%] left-[18%] z-[3] h-[150px] w-[120px] overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/118348.jpg"
+                alt="Team meeting"
+                fill
+                className="object-cover object-bottom"
+                sizes="120px"
+              />
+            </div>
+
+            {/* Wide tile - bottom center */}
+            <div className="absolute bottom-[8%] left-[40%] z-[4] h-[130px] w-[170px] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/images/2150917270.jpg"
+                alt="Engineering team"
+                fill
+                className="object-cover object-top"
+                sizes="170px"
+              />
+            </div>
+
+            {/* Small accent tile - bottom right */}
+            <div className="absolute bottom-[18%] left-[72%] z-[2] h-[80px] w-[70px] overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/118348.jpg"
+                alt="Collaboration"
+                fill
+                className="object-cover object-left-top"
+                sizes="70px"
+              />
+            </div>
+
+            {/* Tiny dark accent - bottom far right */}
+            <div className="absolute bottom-[25%] left-[82%] z-[1] h-[60px] w-[45px] rounded-lg bg-gradient-to-b from-gray-500 to-gray-700 shadow-md" />
           </div>
         </FadeIn>
 

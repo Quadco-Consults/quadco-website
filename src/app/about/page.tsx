@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { PageHeader } from "@/components/layout/page-header";
 import { CompanyOverview } from "@/components/sections/about/company-overview";
-import { VisionMission } from "@/components/sections/about/vision-mission";
+
 import { OurExperts } from "@/components/sections/home/our-experts";
 import { Timeline } from "@/components/sections/about/timeline";
 import { Policies } from "@/components/sections/about/policies";
@@ -38,7 +38,6 @@ export default function AboutPage() {
         backgroundVariant="emerald"
       />
       <CompanyOverview />
-      <VisionMission />
       <OurExperts />
       <Timeline />
       <Policies />
